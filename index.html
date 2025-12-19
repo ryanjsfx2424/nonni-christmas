@@ -301,7 +301,7 @@
         function renderTiles(word) {
             tileContainer.innerHTML = '';
             // Shuffle letters visually for the user (optional, but makes it a game)
-            const letters = word.split('').sort(() => Math.random() - 0.5);
+            const letters = word;//.split('')//.sort(() => Math.random() - 0.5);
             
             letters.forEach(char => {
                 const tile = document.createElement('div');
