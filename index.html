@@ -300,7 +300,8 @@
 
             if (isValid) {
                 foundWords.add(guess);
-                score++;
+                score += guess.length - 2;
+                //score++;
                 updateScoreBoard();
                 const tag = document.createElement('div');
                 tag.className = 'found-tag';
